@@ -1,0 +1,139 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+:root{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Kumbh Sans',sans-serif;
+    color: rgb(124,124,125);
+    font-size: 1rem;
+    height: 120vh;
+    background-image: linear-gradient(to right,hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+p{
+    font-size: 1.4rem;
+
+}
+.flex{
+    cursor: pointer;
+}
+.flex:hover{
+    color:orange;
+}
+.content p{
+    display: none;
+}
+.content{
+    border-bottom: 2.4px solid hsl(240, 5%, 91%);
+}
+.content.show p{
+    display: block;
+}
+.content .vi img{
+  width: 70%;
+  cursor: pointer;
+  height:0.8rem ;
+}
+.content.show h2{
+    color: rgb(19,19,21);
+}
+.content.show .vi img{
+    rotate: -180deg;
+}
+
+.flex{
+    display: flex;
+    /* gap: 5rem; */
+    align-items: center;
+    justify-content: space-between;
+}
+.vi {
+    height: 1.6rem;
+}
+.faq{
+margin-top: 3rem;
+}
+h1{
+    text-align: center;
+}
+.card{
+    width: 360px;
+    margin: 16rem auto;
+    background-color: #fff;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    position: relative;
+    border-radius: 14px;
+}
+.card .b{
+    z-index: 1;
+    width: 30%;
+    position: absolute;
+    top: -50px;
+    left: 18px;
+    /* right: -1px; */
+}
+.b::after{
+    /* content: url(images/illustration-woman-online-desktop.svg); */
+}
+.li{
+    width: 70%;
+    position: absolute;
+    top: -119px;
+    left: 5rem;
+    /* right: 2px; */
+}
+.c{
+    display: none;
+}
+.r{
+    position: relative;
+    left: 3rem;
+}
+ @media screen and (min-width:764px) {
+    .m{
+        display: none;
+    }
+    .c{
+        display: block;
+        position: relative;
+        align-self: center;
+        background-image: url(images/bg-pattern-desktop.svg);
+    }
+    .card{
+        padding-right: 4rem;
+        padding-bottom: 5rem;
+        display: grid;
+        max-width: 950px;
+        width: 900px;
+        margin-inline:auto ;
+        grid-template-columns:1fr 1fr;
+    }
+    .c img{
+        width:100%;
+        margin-right: 6rem;
+        position: relative; 
+         left: -2rem;
+
+        /* justify-self: flex-start; */
+    }
+    .c .box{
+        width: 170px;
+        position: absolute;
+        bottom: 1.8rem; 
+         /* top: 0rem; */
+        /* right: 0;
+        bottom: -1rem; */
+    }
+    h1{
+        text-align: left;
+    }
+    .jj{
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        /* z-index:-1; */
+        left: 1rem;
+    }
+ }
